@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="bg">
+
+        <h1 style="color: #333333">Login</h1>
+        <hr>
+        <form method="post" action='https://register-demo.freecodecamp.org'>
+            <fieldset>
+                <label for="email">Email: <input id="email" name="email" type="email" required /></label>
+                <label for="password">Password: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+            </fieldset>
+            <input type="submit" onclick="openPopup()" class="btn" value="Login" />
+            <div class="popup" id="popup">
+                <img src="tick.png" alt="">
+                <h2>Hurray !</h2>
+                <p>Login Successful.</p>
+                <button type="button" onclick="closePopup()"><a href="./pages">OK</a></button>
+            </div>
+
+            <p><a href="Signup.html">New user ? Sign up</a></p>
+        </form>
+
+
+
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+</body>
+
+</html>
