@@ -1,0 +1,59 @@
+.Head
+{
+  display: flex;
+  height: 150px;
+  padding: 5px 10px;
+  background-image:linear-gradient(to right,#9DAEFF,#7DEBD7);
+  box-shadow: 0px 3px 8px rgb(0, 0, 0);
+  font-family: 'Inter';
+  font-size: 24px;
+}
+
+.Heading
+{
+  position:absolute;
+  padding-left: 175px;
+}
+
+.pago
+{
+  background-image: url("../images/backstock.jpg");
+  background-size: cover;
+}
+.card-list
+{
+  margin-left:35%;
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 10px;
+}
+
+.Card{
+  width: 400px;
+  height: 200px;
+  font-size: 12px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: row; 
+  box-shadow: 0px 5px 8px rgb(0, 0, 0);
+  padding: 30px;
+  gap:10px;
+  border-radius: 20px;
+  background-image:linear-gradient(to right,#9DAEFF,#7DEBD7);
+}
+
+.card-img
+{
+  display: flex;
+  border-radius: 20px;
+  width:25%;
+  height: 30%;
+}
+
+.card-stats
+{
+  font-size: 20px;
+  font-family: 'Inter';
+}
