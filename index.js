@@ -50,7 +50,7 @@ function Quote()
  return(
   <div className="quote">
     <button className="getstart">
-      <a href="./Signup.html">GET STARTED</a>
+      <a href="./pages">GET STARTED</a>
     </button>
   </div>
  )
